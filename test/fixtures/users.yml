@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  password_digest: MyString
+  grade: 1
+  interests: MyString
+  strengths: MyString
+  aspirations: MyString
+  date: 2017-09-15
+
+two:
+  username: MyString
+  password_digest: MyString
+  grade: 1
+  interests: MyString
+  strengths: MyString
+  aspirations: MyString
+  date: 2017-09-15

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  affective_goal: MyText
+  academic_goal: MyText
+  task: MyText
+  measure: MyText
+  actions: MyText
+  purpose: MyText
+  deadline: 2017-09-15
+
+two:
+  affective_goal: MyText
+  academic_goal: MyText
+  task: MyText
+  measure: MyText
+  actions: MyText
+  purpose: MyText
+  deadline: 2017-09-15
