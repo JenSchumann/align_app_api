@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :update, :destroy]
+  before_action :set_user, only: [:show]
+  before_action :authenticate_token, except: [:login, :create]
 
 
   # user login
