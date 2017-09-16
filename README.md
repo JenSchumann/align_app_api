@@ -1,24 +1,31 @@
-# README
+**Align (backend)**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Designer: Jen Schumann
 
-Things you may want to cover:
+**Live Site:**
+tbd
 
-* Ruby version
+**Description:**
+- In the state of Colorado, gifted-talented learners are supported by state funding and mandates.  Mandates include the development of an advanced learning plan.  Technology could better support gifted-talented youth through the existence of a tool which enables the advanced learning plan to be more student-centered.  This project is inspired by that need.
 
-* System dependencies
+- needs pics of redacted ALPS which show lack of user friendliness.
 
-* Configuration
+- needs more Description
 
-* Database creation
+**Technologies Used:**
 
-* Database initialization
+**Project Planning:**
 
-* How to run the test suite
+**User Stories:**
 
-* Services (job queues, cache servers, search engines, etc.)
+**Wireframe:**
 
-* Deployment instructions
+- https://xd.adobe.com/view/58c55823-9f92-44da-870b-6c4fb64b86a5/
 
-* ...
+**For Future Enhancement:**
+
+- Trello board: https://trello.com/b/IVbKc8oZ/final-project-5-align
+
+**For Future Reference:**
+
+**Growth & Achievements:**
