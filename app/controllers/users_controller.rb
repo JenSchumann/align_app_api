@@ -95,8 +95,8 @@ class UsersController < ApplicationController
     def user_params
 
       ###################################need to update this when form & functionality built on front end
-      # params.require(:user).permit(:username, :password_digest, :grade, :interests, :strengths, :aspirations, :date)
+      params.require(:user).permit(:username, :password, :password_digest, :grade, :interests, :strengths, :aspirations, :date)
 
-      params.require(:user).permit(:username, :password, :password_digest)
+      # params.require(:user).permit(:username, :password, :password_digest)
     end
 end
