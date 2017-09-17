@@ -5,12 +5,14 @@ class PlansController < ApplicationController
   def index
     @plans = Plan.all
 
-    render json: @plans
+    # render json: @plans
+    render json: @plans.to_json(include: :user)
   end
 
   # GET /plans/1
   def show
-    render json: @plan
+    # render json: @plan
+    render json: @plans.to_json(include: :user)
   end
 
   # POST /plans
@@ -46,6 +48,6 @@ class PlansController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def plan_params
-      params.require(:plan).permit(:affective_goal, :academic_goal, :task, :measure, :actions, :purpose, :deadline)
+      params.require(:plan).permit(:user_id, :affective_goal, :academic_goal, :task, :measure, :actions, :purpose, :deadline)
     end
 end
