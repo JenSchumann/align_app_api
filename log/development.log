@@ -274,3 +274,308 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/users" for 127.0.0.1 at 2017-09-16 10:10:10 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 10:10:45 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 98ms (Views: 0.5ms | ActiveRecord: 9.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 10:10:58 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-09-16 10:11:24 -0600
+Processing by UsersController#index as HTML
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 10:11:52 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-09-16 10:11:57 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 10:14:09 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 72ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-09-16 10:22:37 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-09-16 10:22:41 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 10:23:47 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 72ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-09-16 10:23:51 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-16 16:43:10 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jennifergeeslin/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jennifergeeslin/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 16:44:58 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 108ms (Views: 0.6ms | ActiveRecord: 10.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 16:45:00 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 18:18:12 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 18:18:30 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 18:18:33 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 18:18:50 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 18:18:51 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"Ginger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ginger"], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-09-16 18:19:04 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 18:27:08 -0600
+Processing by UsersController#login as */*
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-09-16 18:28:07 -0600
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=2):
+  
+app/controllers/users_controller.rb:71:in `set_user'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "one"], ["password_digest", "$2a$10$H.6nscC7HhI1TFKhNQg.zO8t2CZYl..DGhuBPEx/9iO2PNaXnmttm"], ["created_at", "2017-09-17 00:28:59.109791"], ["updated_at", "2017-09-17 00:28:59.109791"]]
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 18:29:23 -0600
+Processing by UsersController#login as */*
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 73ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2017-09-16 18:29:50 -0600
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=login):
+  
+app/controllers/users_controller.rb:71:in `set_user'
+Started GET "/users/login" for 127.0.0.1 at 2017-09-16 18:29:55 -0600
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=login):
+  
+app/controllers/users_controller.rb:71:in `set_user'
+Started GET "/users/2" for 127.0.0.1 at 2017-09-16 18:30:03 -0600
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/users/2" for 127.0.0.1 at 2017-09-16 18:30:29 -0600
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"username"=>"oneedited", "password"=>"[FILTERED]"}, "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/users_controller.rb:50:in `update'
+Started PATCH "/users/2" for 127.0.0.1 at 2017-09-16 18:32:08 -0600
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"username"=>"oneedited", "password"=>"[FILTERED]"}, "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/users_controller.rb:50:in `update'
+Started PUT "/users/2" for 127.0.0.1 at 2017-09-16 18:32:16 -0600
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"username"=>"oneedited", "password"=>"[FILTERED]"}, "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/users_controller.rb:50:in `update'
+Started PUT "/users/2" for 127.0.0.1 at 2017-09-16 18:32:19 -0600
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"username"=>"oneedited", "password"=>"[FILTERED]"}, "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/users_controller.rb:50:in `update'
+Started POST "/users/login" for 127.0.0.1 at 2017-09-16 18:33:10 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 87ms (Views: 0.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-09-16 18:33:56 -0600
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 5.5ms)
+
+
+Started PATCH "/users/2" for 127.0.0.1 at 2017-09-16 18:34:30 -0600
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"username"=>"oneedited", "password"=>"[FILTERED]"}, "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/users_controller.rb:50:in `update'
+Started GET "/users/2" for 127.0.0.1 at 2017-09-16 18:42:26 -0600
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/users/2" for 127.0.0.1 at 2017-09-16 18:42:58 -0600
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"username"=>"oneedited", "password"=>"[FILTERED]"}, "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.2ms)[0m  [1m[33mUPDATE "users" SET "username" = $1, "password_digest" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["username", "oneedited"], ["password_digest", "$2a$10$xuzX3V.GTDLxFJdD/IyBseGxClTiQY3Pjd623AdWh3yTet2yGcCjW"], ["updated_at", "2017-09-17 00:42:58.138233"], ["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 86ms (Views: 0.4ms | ActiveRecord: 7.4ms)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2017-09-16 18:44:04 -0600
+Processing by UsersController#destroy as */*
+  Parameters: {"user"=>{"username"=>"oneedited", "password"=>"[FILTERED]"}, "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 11ms (ActiveRecord: 6.5ms)
+
+

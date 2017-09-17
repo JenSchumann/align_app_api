@@ -18,10 +18,9 @@ class ApplicationController < ActionController::API
   def decode_token(token_input)
       puts "DECODE TOKEN, token input: #{token_input}"
       puts token = JWT.decode(token_input, ENV['JWT_SECRET'], true, { :algorithm => 'HS256' })
-      # render json: { decoded: token }
       JWT.decode(token_input, ENV['JWT_SECRET'], true, { :algorithm => 'HS256' })
   rescue
-      render json: { status: 401, message: 'Unauthorized User, Get Out!!!' }
+      render json: { status: 401, message: 'Unauthorized User, Go Bark Up Another Tree!!!' }
   end
 
   def get_current_user

@@ -11,10 +11,8 @@ class UsersController < ApplicationController
     puts password: params[:user][:password]
 
     user = User.find_by(username: params[:user][:username])
-
     if user && user.authenticate(params[:user][:password])
       token = create_token(user.id, user.username)
-      # token: token, should go between status and user
       render json: {status: 200, token: token, user: user}
     else
       render json: {status: 401, message: "Unauthorized - Login"}
@@ -22,7 +20,7 @@ class UsersController < ApplicationController
   end
 
 
-  # GET /users
+  # GET /users: if admin functionality isn't built for version 1 this needs to be commented out
   def index
     @users = User.all
 
@@ -47,8 +45,10 @@ class UsersController < ApplicationController
 
   # PATCH/PUT /users/1
   def update
+    @user = User.find(params[:id])
     if @user.update(user_params)
       render json: @user
+      puts 'align backend updating user'
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -56,6 +56,8 @@ class UsersController < ApplicationController
 
   # DELETE /users/1
   def destroy
+    puts 'learner destroying their align account - backend talking'
+    @user = User.find(params[:id])
     @user.destroy
   end
 
@@ -64,10 +66,6 @@ class UsersController < ApplicationController
 
     def create_token(id, username)
       JWT.encode(payload(id, username), ENV['JWT_SECRET'], 'HS256')
-    end
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
     end
 
     def payload(id, username)
@@ -84,10 +82,16 @@ class UsersController < ApplicationController
     }
     end
 
+    # Use callbacks to share common setup or constraints between actions.
+    def set_user
+      @user = User.find(params[:id])
+    end
 
 
     # Only allow a trusted parameter "white list" through.
     def user_params
+
+      ###################################need to update this when form & functionality built on front end
       # params.require(:user).permit(:username, :password_digest, :grade, :interests, :strengths, :aspirations, :date)
 
       params.require(:user).permit(:username, :password, :password_digest)
