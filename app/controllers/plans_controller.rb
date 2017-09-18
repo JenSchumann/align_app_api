@@ -1,5 +1,5 @@
 class PlansController < ApplicationController
-  before_action :set_plan, only: [:show, :update, :destroy]
+  before_action :set_plan, only: [:show, :update, :destroy, :edit]
 
   # GET /plans
   def index

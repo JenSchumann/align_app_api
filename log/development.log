@@ -4644,3 +4644,403 @@ Processing by UsersController#login as HTML
 Completed 200 OK in 72ms (Views: 0.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-09-18 11:23:31 -0600
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 11:23:49 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 11:23:55 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 95ms (Views: 0.6ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 12:26:57 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 12:27:03 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 88ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:05:32 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:05:39 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:06:05 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:06:12 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:10:12 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:10:18 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/plans" for 127.0.0.1 at 2017-09-18 13:10:21 -0600
+Processing by PlansController#create as HTML
+  Parameters: {"plan"=>{"user_id"=>1}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "plans" ("created_at", "updated_at", "user_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2017-09-18 19:10:21.675002"], ["updated_at", "2017-09-18 19:10:21.675002"], ["user_id", 1]]
+  [1m[35m (12.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 42ms (Views: 0.9ms | ActiveRecord: 17.5ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:11:27 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:11:32 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/plans" for 127.0.0.1 at 2017-09-18 13:11:35 -0600
+Processing by PlansController#create as HTML
+  Parameters: {"plan"=>{"user_id"=>1}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "plans" ("created_at", "updated_at", "user_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2017-09-18 19:11:35.904527"], ["updated_at", "2017-09-18 19:11:35.904527"], ["user_id", 1]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 11ms (Views: 0.3ms | ActiveRecord: 6.4ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:30:15 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:30:21 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/plans" for 127.0.0.1 at 2017-09-18 13:30:47 -0600
+Processing by PlansController#index as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT "plans".* FROM "plans"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-09-18 13:30:48 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.4ms)[0m  [1m[34mSELECT "plans".* FROM "plans" WHERE "plans"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 31ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:31:08 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:31:15 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:33:52 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:33:57 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 72ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:35:05 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:35:10 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/plans" for 127.0.0.1 at 2017-09-18 13:35:12 -0600
+Processing by PlansController#create as HTML
+  Parameters: {"plan"=>{"user_id"=>1}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "plans" ("created_at", "updated_at", "user_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2017-09-18 19:35:12.231996"], ["updated_at", "2017-09-18 19:35:12.231996"], ["user_id", 1]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 10ms (Views: 0.3ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:50:03 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:50:09 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"one", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "one"], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/plans" for 127.0.0.1 at 2017-09-18 13:50:40 -0600
+Processing by PlansController#index as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT "plans".* FROM "plans"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/plans" for 127.0.0.1 at 2017-09-18 13:51:30 -0600
+Processing by PlansController#create as HTML
+  Parameters: {"plan"=>{"user_id"=>1}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "plans" ("created_at", "updated_at", "user_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2017-09-18 19:51:30.749486"], ["updated_at", "2017-09-18 19:51:30.749486"], ["user_id", 1]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 10ms (Views: 0.2ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:52:37 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:53:02 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"help", "password"=>"[FILTERED]"}}
+Started POST "/users" for 127.0.0.1 at 2017-09-18 13:53:02 -0600
+Processing by UsersController#create as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "help"], ["LIMIT", 1]]
+  Parameters: {"user"=>{"username"=>"help", "password"=>"[FILTERED]", "grade"=>"9", "interests"=>"help", "strengths"=>"help", "aspirations"=>"help", "date"=>"2017-09-18T06:00:00.000Z"}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "grade", "interests", "strengths", "aspirations", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "help"], ["password_digest", "$2a$10$ibbyY5jsEh/D5fNLD7hYSefcgN6ZcadbmsHvS8HYS8pJS/FZkpZEC"], ["grade", 9], ["interests", "help"], ["strengths", "help"], ["aspirations", "help"], ["date", "2017-09-18"], ["created_at", "2017-09-18 19:53:02.649470"], ["updated_at", "2017-09-18 19:53:02.649470"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT "plans".* FROM "plans" WHERE "plans"."user_id" = $1[0m  [["user_id", 11]]
+Completed 201 Created in 93ms (Views: 0.1ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:56:50 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 13:56:57 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"help", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "help"], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/plans" for 127.0.0.1 at 2017-09-18 13:59:01 -0600
+Processing by PlansController#create as HTML
+  Parameters: {"plan"=>{"user_id"=>11}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "plans" ("created_at", "updated_at", "user_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2017-09-18 19:59:01.203979"], ["updated_at", "2017-09-18 19:59:01.203979"], ["user_id", 11]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 10ms (Views: 0.3ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:11:15 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:11:24 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"help", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "help"], ["LIMIT", 1]]
+Completed 200 OK in 86ms (Views: 0.5ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/plans" for 127.0.0.1 at 2017-09-18 14:11:27 -0600
+Processing by PlansController#create as HTML
+  Parameters: {"plan"=>{"user_id"=>11}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "plans" ("created_at", "updated_at", "user_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2017-09-18 20:11:27.882306"], ["updated_at", "2017-09-18 20:11:27.882306"], ["user_id", 11]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 25ms (Views: 0.6ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:17:32 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:17:41 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"help", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "help"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:19:13 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:19:25 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"help", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "help"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:21:35 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:21:42 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"help", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "help"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/plans" for 127.0.0.1 at 2017-09-18 14:23:43 -0600
+Processing by PlansController#create as HTML
+  Parameters: {"plan"=>{"user_id"=>11}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "plans" ("created_at", "updated_at", "user_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2017-09-18 20:23:43.833250"], ["updated_at", "2017-09-18 20:23:43.833250"], ["user_id", 11]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 11ms (Views: 0.3ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:27:24 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:27:30 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"help", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "help"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/plans" for 127.0.0.1 at 2017-09-18 14:29:05 -0600
+Processing by PlansController#create as HTML
+  Parameters: {"plan"=>{"user_id"=>11}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "plans" ("created_at", "updated_at", "user_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2017-09-18 20:29:05.853159"], ["updated_at", "2017-09-18 20:29:05.853159"], ["user_id", 11]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 12ms (Views: 0.2ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:36:29 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2017-09-18 14:36:35 -0600
+Processing by UsersController#login as HTML
+  Parameters: {"user"=>{"username"=>"help", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "help"], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/plans" for 127.0.0.1 at 2017-09-18 14:36:54 -0600
+Processing by PlansController#create as HTML
+  Parameters: {"plan"=>{"affective_goal"=>"sdfgsdfg", "academic_goal"=>"asdfadsas", "task"=>"dfasasdf", "measure"=>"asasd", "actions"=>"fasda", "purpose"=>"sdfa", "deadline"=>"2017-09-18T06:00:00.000Z", "user_id"=>11}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "plans" ("affective_goal", "academic_goal", "task", "measure", "actions", "purpose", "deadline", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["affective_goal", "sdfgsdfg"], ["academic_goal", "asdfadsas"], ["task", "dfasasdf"], ["measure", "asasd"], ["actions", "fasda"], ["purpose", "sdfa"], ["deadline", "2017-09-18"], ["created_at", "2017-09-18 20:36:54.177884"], ["updated_at", "2017-09-18 20:36:54.177884"], ["user_id", 11]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 13ms (Views: 0.3ms | ActiveRecord: 6.7ms)
+
+
