@@ -20,7 +20,7 @@ class PlansController < ApplicationController
     @plan = Plan.new(plan_params)
 
     if @plan.save
-      render json: @plan, status: :created, location: @plan
+      render json: @plan.to_json(include: :user), status: :created, location: @plan
     else
       render json: @plan.errors, status: :unprocessable_entity
     end
@@ -29,7 +29,7 @@ class PlansController < ApplicationController
   # PATCH/PUT /plans/1
   def update
     if @plan.update(plan_params)
-      render json: @plan
+      render json: @plan.to_json(include: :user)
     else
       render json: @plan.errors, status: :unprocessable_entity
     end
