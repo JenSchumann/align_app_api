@@ -28,19 +28,19 @@ class UsersController < ApplicationController
 
     # render json: @users
     #need to set up for admin use, active now only for production:
-    render json: @users.to_json(include: :plans)
+    render json: @users
   end
 
   # GET /users/1
   def show
-    # render json: @user
+    render json: @user
     #trying to get user profile upon login..not sure if this is where to:
-    @user = User.find(params[:id])
-    if @user
-    render json: @user.to_json(include: :plans)
-  else
-    render json: @user.errors, status: :unprocessable_entity
-  end
+    # @user = User.find(params[:id])
+    # if @user
+    # render json: @user.to_json
+  # else
+  #   render json: @user.errors, status: :unprocessable_entity
+  # end
 end
 
   # POST /users
@@ -48,7 +48,7 @@ end
     @user = User.new(user_params)
 
     if @user.save
-      render json: @user.to_json(include: :plans), status: :created
+      render json: @user, status: :created
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -58,7 +58,7 @@ end
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      render json: @user.to_json(include: :plans)
+      render json: @user
       puts 'align backend updating user'
     else
       render json: @user.errors, status: :unprocessable_entity
@@ -96,6 +96,7 @@ end
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
+      
     end
 
 
