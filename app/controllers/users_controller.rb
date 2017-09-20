@@ -28,12 +28,15 @@ class UsersController < ApplicationController
 
     # render json: @users
     #need to set up for admin use, active now only for production:
-    render json: @users
+    render json: @users.to_json(include: :plans)
   end
 
   # GET /users/1
   def show
-    render json: @user
+
+    render json: @user.to_json(include: :plans)
+
+    ####trash the rest of this if
     #trying to get user profile upon login..not sure if this is where to:
     # @user = User.find(params[:id])
     # if @user
@@ -58,6 +61,8 @@ end
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
+
+      #does plans attached to user need to be included to stay attached once a user updates their profile?
       render json: @user
       puts 'align backend updating user'
     else
@@ -68,6 +73,7 @@ end
   # DELETE /users/1
   def destroy
     puts 'learner destroying their align account - backend talking'
+    #does plans attached to user need to be included to stay attached once a user deletes their profile?
     @user = User.find(params[:id])
     @user.destroy
   end
@@ -96,7 +102,7 @@ end
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
-      
+
     end
 
 

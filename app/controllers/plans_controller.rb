@@ -4,9 +4,14 @@ class PlansController < ApplicationController
   # GET /plans
   def index
     @plans = Plan.all
-
     # render json: @plans
     render json: @plans.to_json
+
+  end
+
+  def index
+      @plan = Plan.all
+      render json: @plan.to_json
   end
 
   # GET /plans/1
