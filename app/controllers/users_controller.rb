@@ -26,16 +26,17 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    # render json: @users
+    render json: @users
     #need to set up for admin use, active now only for production:
-    render json: @users.to_json(include: :plans)
+    # render json: @users.to_json(include: :plans)
   end
 
   # GET /users/1
     def show
+        render json: @user
       # @users = User.find(params[:id])
 
-      render json: @user.to_json(include: :plans)
+      # render json: @user.to_json(include: :plans)
     end
 
 
@@ -59,10 +60,12 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
-    @user = User.new(user_params, plan_params)
+    # @user = User.new(user_params, plan_params)
+    @user = User.new(user_params)
 
     if @user.save
-      render json: @user.to_json(include: :plans), status: :created
+      # render json: @user.to_json(include: :plans), status: :created
+      render json: @user, status: :created
     else
       render json: @user.errors, status: :unprocessable_entity
     end
