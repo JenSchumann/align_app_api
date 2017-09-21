@@ -3,29 +3,27 @@ class PlansController < ApplicationController
 
   # GET /plans
   def index
-    @plans = Plan.all
+    @plans = Plan.where(user_id:
+    params[:user_id])
     # render json: @plans
-    render json: @plans.to_json
+    render json: @plans
 
-  end
-
-  def index
-      @plan = Plan.all
-      render json: @plan.to_json
   end
 
   # GET /plans/1
   def show
     # render json: @plan
-    render json: @plan.to_json
+    render json: @plan
   end
 
   # POST /plans
   def create
     @plan = Plan.new(plan_params)
 
+    @plan.user_id = params[:user_id]
+
     if @plan.save
-      render json: @plan, status: :created, location: @plan
+      render json: @plan, status: :created
     else
       render json: @plan.errors, status: :unprocessable_entity
     end

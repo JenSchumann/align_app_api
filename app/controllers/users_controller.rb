@@ -32,26 +32,37 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1
-  def show
+    def show
+      # @users = User.find(params[:id])
 
-    render json: @user.to_json(include: :plans)
+      render json: @user.to_json(include: :plans)
+    end
+
+
+
+  # def show
+  #   render json: @user
+
+    # render json: @user.to_json(include: :plans)
 
     ####trash the rest of this if
     #trying to get user profile upon login..not sure if this is where to:
+    # need to change to waht is in plans lines 6-8?
+    # below is creating loop
     # @user = User.find(params[:id])
-    # if @user
-    # render json: @user.to_json
+  #   if @user
+  #   render json: @user.to_json(include: :plans)
   # else
   #   render json: @user.errors, status: :unprocessable_entity
   # end
-end
+# end
 
   # POST /users
   def create
-    @user = User.new(user_params)
+    @user = User.new(user_params, plan_params)
 
     if @user.save
-      render json: @user, status: :created
+      render json: @user.to_json(include: :plans), status: :created
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -109,9 +120,7 @@ end
     # Only allow a trusted parameter "white list" through.
     def user_params
 
-      ###################################need to update this when form & functionality built on front end
       params.require(:user).permit(:username, :password, :password_digest, :grade, :interests, :strengths, :aspirations, :date)
 
-      # params.require(:user).permit(:username, :password, :password_digest)
     end
 end
