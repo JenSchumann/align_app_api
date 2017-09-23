@@ -10,10 +10,12 @@ class PlansController < ApplicationController
 
   end
 
+# user_plan GET    /users/:user_id/plans/:id(.:format) plans#show
   # GET /plans/1
   def show
-    # render json: @plan
+    # @plan = Plan.where(user_id: params[:user_id])
     render json: @plan
+    # render json: @plan.plan_id
   end
 
   # POST /plans

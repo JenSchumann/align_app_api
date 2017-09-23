@@ -13,8 +13,6 @@ class UsersController < ApplicationController
     user = User.find_by(username: params[:user][:username])
     if user && user.authenticate(params[:user][:password])
       token = create_token(user.id, user.username)
-      # added @user, square brackets around curly braces in attempt to show profile once logged in
-      # render json: @user.to_json(include: :plans)
       render json: {status: 200, token: token, user: user}
     else
       render json: {status: 401, message: "Unauthorized - Login"}
