@@ -24,7 +24,7 @@ Adobe XD, Ruby, Rails, Postgresql, JWT Auth, Angular, Bootstrap, HTML5, CSS, Jav
 **Project Planning:**
 
 - Utilized SCRUM strategies with Trello, ZOOM, Slack, Git, & Collegial support
-**User Stories:**
+
 
 **Wireframe:**
 - https://xd.adobe.com/view/58c55823-9f92-44da-870b-6c4fb64b86a5/
